@@ -5,8 +5,8 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
 
-    private int sectorsX = Screen.width / 16;
-    private int sectorsY = Screen.height / 16;
+    private int sectorsX = Screen.width / 32;
+    private int sectorsY = Screen.height / 32;
     private Lehmer lehmer = new Lehmer();
     public GameObject starSystem;
     public Vector2 screenPos;
@@ -17,9 +17,6 @@ public class Generator : MonoBehaviour
     {
         screenPos = new Vector2(0.0f,0.0f);
         genGalaxy();
-        Debug.Log(Screen.width + " " + Screen.height);
-
-
     }
 
     void genGalaxy(){
